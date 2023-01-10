@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="bookContainer"></div>
+      <button id="newBook" class="btn" onclick="hideForm()">New Book</button>
+      <div class="formContainer">
+        <input
+          type="text"
+          id="titleInput"
+          name="titleInput"
+          placeholder="title"
+        />
+        <input
+          type="text"
+          id="authorInput"
+          name="authorInput"
+          placeholder="title"
+        />
+        <input
+          type="number"
+          id="pagesInput"
+          name="pagesInput"
+          placeholder="pages"
+        />
+        <div class="readContain">
+          <label for="readInput">Book is read</label>
+          <input type="checkbox" id="readInput" name="readInput" />
+        </div>
+
+        <button type="button" id="submitBook" class="btn">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
