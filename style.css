@@ -2,23 +2,43 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+}
+
+.main {
+  width: 140vh;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .bookContainer {
   display: grid;
+  height: 80vh;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
-  background-color: aqua;
+  background-color: #bf712b;
 }
 
 .bookCard {
-  background-color: antiquewhite;
+  background-color: #f5be8d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid 2px black;
+  margin: 10px;
+  position: relative;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
 .formContainer {
@@ -26,7 +46,7 @@ body {
   display: grid;
   width: 40rem;
   height: 40rem;
-  background-color: aquamarine;
+  background-color: #f4b46d;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -73,4 +93,30 @@ input {
 .hidden * {
   visibility: hidden;
   opacity: 0;
+}
+
+button {
+  background-color: #3e1900; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: grey;
+  color: black;
+  font-size: 10px;
+  margin: 0;
+  padding: 5px;
+}
+
+.readButton {
+  margin: 10px;
 }

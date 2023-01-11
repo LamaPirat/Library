@@ -9,34 +9,40 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>My Library!</h1>
     <div class="main">
       <div class="bookContainer"></div>
       <button id="newBook" class="btn" onclick="hideForm()">New Book</button>
-      <div class="formContainer">
+      <div class="formContainer hidden">
         <input
           type="text"
           id="titleInput"
           name="titleInput"
           placeholder="title"
+          required
         />
         <input
           type="text"
           id="authorInput"
           name="authorInput"
-          placeholder="title"
+          placeholder="author"
+          required
         />
         <input
           type="number"
           id="pagesInput"
           name="pagesInput"
           placeholder="pages"
+          required
         />
         <div class="readContain">
           <label for="readInput">Book is read</label>
           <input type="checkbox" id="readInput" name="readInput" />
         </div>
 
-        <button type="button" id="submitBook" class="btn">Submit</button>
+        <button type="button" id="submitBook" class="btn" onclick="getInput()">
+          Submit
+        </button>
       </div>
     </div>
   </body>
